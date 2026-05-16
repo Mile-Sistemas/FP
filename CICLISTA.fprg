@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CICLISTA"/>
+        <attribute name="authors" value="PERSONAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-08 04:25:40 p.&#160;m."/>
+        <attribute name="created" value="UEVSU09OQUw7REVTS1RPUC1PUTRKQlQyOzIwMjYtMDUtMDg7MDM6NTQ6MzkgcC7CoG0uOzMyODg="/>
+        <attribute name="edited" value="UEVSU09OQUw7REVTS1RPUC1PUTRKQlQyOzIwMjYtMDUtMDg7MDQ6MjU6NDAgcC7CoG0uOzE7MzM4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="VELOCIDAD, DISTANCIA, PUNTOA, PUNTOB, TIEMPO" type="Real" array="False" size=""/>
+            <output expression="&quot;necesito la velocidad&quot;" newline="True"/>
+            <input variable="VELOCIDAD"/>
+            <output expression="&quot;necesito la distancia&quot;" newline="True"/>
+            <input variable="DISTANCIA"/>
+            <assign variable="TIEMPO" expression="DISTANCIA / VELOCIDAD"/>
+            <output expression="&quot;EL CICLISTA SE DEMORO EN RECORRER&quot; &amp; TIEMPO &amp; &quot;HORAS&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

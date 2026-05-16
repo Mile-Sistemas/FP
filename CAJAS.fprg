@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CAJAS"/>
+        <attribute name="authors" value="PERSONAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-08 03:29:36 p.&#160;m."/>
+        <attribute name="created" value="UEVSU09OQUw7REVTS1RPUC1PUTRKQlQyOzIwMjYtMDUtMDg7MDM6MDA6MjcgcC7CoG0uOzMyNzY="/>
+        <attribute name="edited" value="UEVSU09OQUw7REVTS1RPUC1PUTRKQlQyOzIwMjYtMDUtMDg7MDM6Mjk6MzYgcC7CoG0uOzE7MzM5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="caja1, caja2, caja3" type="Integer" array="False" size=""/>
+            <output expression="&quot;necesito el numero1&quot;" newline="True"/>
+            <input variable="caja1"/>
+            <output expression="&quot;necesito el numero2&quot;" newline="True"/>
+            <input variable="caja2"/>
+            <assign variable="caja3" expression="caja1 + caja2"/>
+            <output expression="&quot;el resultado es&quot; &amp; caja3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

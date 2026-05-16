@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CASITAS"/>
+        <attribute name="authors" value="PERSONAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-08 08:57:51 p.&#160;m."/>
+        <attribute name="created" value="UEVSU09OQUw7REVTS1RPUC1PUTRKQlQyOzIwMjYtMDUtMDg7MDc6MzU6MzEgcC7CoG0uOzMyODM="/>
+        <attribute name="edited" value="UEVSU09OQUw7REVTS1RPUC1PUTRKQlQyOzIwMjYtMDUtMDg7MDg6NTc6NTEgcC7CoG0uOzE7MzM5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <declare name="Entero, Largo, Ancho, Tama&#241;o" type="Real" array="False" size=""/>
+            <assign variable="Tama&#241;o" expression="Random(100)"/>
+            <assign variable="Ancho" expression="Tama&#241;o*5"/>
+            <assign variable="Largo" expression="Tama&#241;o*5"/>
+            <call expression="HacerRectangulo(Ancho,Largo)"/>
+            <forward expression="Largo" pen="down"/>
+            <call expression="HacerTriangulo(Ancho)"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="Largo" pen="down"/>
+            <turn expression="90" rotate="left"/>
+        </body>
+    </function>
+    <function name="HacerRectangulo" type="None" variable="">
+        <parameters>
+            <parameter name="W" type="Real" array="False"/>
+            <parameter name="H" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <for variable="I" start="1" end="2" direction="inc" step="1">
+                <forward expression="H" pen="down"/>
+                <turn expression="90" rotate="right"/>
+                <forward expression="W" pen="down"/>
+                <turn expression="90" rotate="right"/>
+            </for>
+        </body>
+    </function>
+    <function name="HacerTriangulo" type="None" variable="">
+        <parameters>
+            <parameter name="Ancho" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <turn expression="45" rotate="right"/>
+            <forward expression="Ancho*(SQRT(2))/2" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="Ancho*(SQRT(2))/2" pen="down"/>
+            <turn expression="135" rotate="right"/>
+            <forward expression="Ancho" pen="down"/>
+        </body>
+    </function>
+</flowgorithm>
